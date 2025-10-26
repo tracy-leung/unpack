@@ -113,20 +113,55 @@ The app uses Tailwind CSS. Customize styles in:
 - `client/src/index.css`
 - `client/tailwind.config.js`
 
+## Deployment
+
+This project is ready for deployment! See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
+
+### Quick Deploy Options
+
+**Frontend (GitHub Pages)**:
+- Already configured with GitHub Actions
+- Automatically deploys on push to main branch
+- Available at: `https://tracyyyleung.github.io/unpack`
+
+**Backend (Railway/Render)**:
+- Configure environment variables
+- Deploy with one click
+- Connect to your GitHub repository
+
+### Required Environment Variables
+
+**Backend**:
+```
+ANTHROPIC_API_KEY=your_anthropic_api_key
+NODE_ENV=production
+FRONTEND_URL=https://tracyyyleung.github.io/unpack
+```
+
+**Frontend**:
+```
+REACT_APP_API_URL=https://your-backend-domain.com/api
+```
+
 ## Next Steps
 
 To complete the implementation:
 
-1. **Add LLM API Integration:**
+1. **Deploy to Production:**
+   - Follow the deployment guide
+   - Set up environment variables
+   - Test the complete application
+
+2. **Add LLM API Integration:**
    - Integrate with Anthropic Claude API
    - Add OpenAI as backup option
    - Implement proper error handling
 
-2. **Enhance Question Generation:**
+3. **Enhance Question Generation:**
    - Use LLM to generate more sophisticated questions
    - Add context-aware question selection
 
-3. **Add Features:**
+4. **Add Features:**
    - Save conversation history
    - Export responses
    - User preferences
