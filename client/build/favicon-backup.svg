@@ -1,0 +1,17 @@
+<!-- Generated using the same logic as AvatarFallback component -->
+<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="mask" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+      <rect width="32" height="32" rx="16" fill="white"/>
+    </mask>
+    <filter id="filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="7" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" result="blur"/>
+    </filter>
+  </defs>
+  <rect width="32" height="32" rx="16" fill="hsl(250, 70%, 60%)"/>
+  <g mask="url(#mask)">
+    <rect width="32" height="32" fill="hsl(251, 71%, 61%)"/>
+    <path d="M0 0h20v20H0z" transform="translate(17.999999952195406, 14.000000047804594) rotate(250, 10, 10) scale(1.2399999952195406)" fill="hsl(250, 70%, 60%)" filter="url(#filter)"/>
+    <path d="M0 0h20v20H0z" transform="translate(16.799999904390813, 15.200000095609187) rotate(140, 10, 10) scale(1.279999990439081)" fill="hsl(251, 71%, 61%)" filter="url(#filter)"/>
+  </g>
+</svg>

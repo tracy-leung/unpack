@@ -1,0 +1,82 @@
+{
+  "modelConfiguration": {
+    "defaultModel": "claude-3-haiku-20240307",
+    "availableModels": {
+      "claude-3-haiku-20240307": {
+        "name": "Claude 3 Haiku",
+        "cost": "Lowest",
+        "speed": "Fastest", 
+        "quality": "Good",
+        "maxTokens": 200000,
+        "description": "Fast and cost-effective for most tasks",
+        "useCase": "General questions, quick responses"
+      },
+      "claude-3-sonnet-20240229": {
+        "name": "Claude 3 Sonnet",
+        "cost": "Medium",
+        "speed": "Medium",
+        "quality": "High", 
+        "maxTokens": 200000,
+        "description": "Balanced performance and quality",
+        "useCase": "Complex reasoning, detailed analysis"
+      },
+      "claude-3-opus-20240229": {
+        "name": "Claude 3 Opus",
+        "cost": "Highest",
+        "speed": "Slowest",
+        "quality": "Highest",
+        "maxTokens": 200000,
+        "description": "Best quality for complex reasoning",
+        "useCase": "Expert-level advice, complex problem solving"
+      }
+    }
+  },
+  
+  "responseParameters": {
+    "maxTokens": 1500,
+    "temperature": 0.7,
+    "topP": 0.9,
+    "topK": 40,
+    "repetitionPenalty": 1.0,
+    "stopSequences": []
+  },
+  
+  "personalities": {
+    "helpful": {
+      "name": "Helpful Assistant",
+      "description": "Empathetic and understanding, provides practical advice",
+      "tone": "Warm, supportive, practical",
+      "useCase": "General advice, personal questions"
+    },
+    "professional": {
+      "name": "Professional Consultant", 
+      "description": "Authoritative and well-researched, provides expert-level advice",
+      "tone": "Authoritative, direct, analytical",
+      "useCase": "Business decisions, technical questions"
+    },
+    "friendly": {
+      "name": "Friendly Companion",
+      "description": "Warm and encouraging, provides emotional support",
+      "tone": "Conversational, encouraging, supportive", 
+      "useCase": "Personal support, motivation, casual chat"
+    }
+  },
+  
+  "fineTuningTips": {
+    "temperature": {
+      "0.0-0.3": "Very deterministic, consistent responses",
+      "0.4-0.7": "Balanced creativity and consistency (recommended)",
+      "0.8-1.0": "Very creative, varied responses"
+    },
+    "maxTokens": {
+      "100-500": "Short, concise responses",
+      "500-1000": "Medium-length responses (recommended)",
+      "1000-2000": "Detailed, comprehensive responses"
+    },
+    "modelSelection": {
+      "haiku": "Use for: Quick questions, simple advice, cost-sensitive applications",
+      "sonnet": "Use for: Complex reasoning, detailed analysis, balanced performance",
+      "opus": "Use for: Expert-level advice, complex problem solving, highest quality needed"
+    }
+  }
+}
