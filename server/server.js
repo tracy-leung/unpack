@@ -186,10 +186,6 @@ app.use(cors({
 }));
 app.use(express.json());
 
-// Serve static files from React build in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
-}
 
 // Initialize Anthropic client
 const anthropic = new Anthropic({
@@ -991,12 +987,6 @@ app.post('/api/generate-final', async (req, res) => {
   }
 });
 
-// Catch-all handler for production: send back React's index.html file
-if (process.env.NODE_ENV === 'production') {
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-  });
-}
 
 // Start server
 app.listen(PORT, () => {
