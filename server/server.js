@@ -180,7 +180,7 @@ const PORT = process.env.PORT || 5001;
 // Middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? [process.env.FRONTEND_URL, 'https://tracyyyleung.github.io'] 
+    ? [process.env.FRONTEND_URL, 'https://unpack-llm.vercel.app', 'https://tracyyyleung.github.io'] 
     : true,
   credentials: true
 }));
