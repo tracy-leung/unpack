@@ -1,4 +1,4 @@
-# Intent Clarifier
+# Unpack
 
 A React application that helps users get better responses from LLMs by asking clarifying questions before generating answers.
 
